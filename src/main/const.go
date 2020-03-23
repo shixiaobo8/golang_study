@@ -1,7 +1,7 @@
 /**
 golang 标识符 常量 const
 常量 const 存放内存地址的内存是不可变的
- */
+*/
 package main
 
 import "fmt"
@@ -13,7 +13,11 @@ const (
 	c2 = iota
 )
 
-func main(){
-	fmt.Println(c0,c1,c2)
-}
+// 常量定义时只能使用内部函数,不能使用运行时变量值
+const (
+	c3 = 'A'
+)
 
+func main() {
+	fmt.Println(c0, c1, c2)
+}
