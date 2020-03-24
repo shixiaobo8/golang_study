@@ -18,6 +18,10 @@ const (
 	c3 = 'A'
 )
 
+func TestConst() {
+	fmt.Println(c0, c1, c2+3)
+}
+
 func main() {
 	fmt.Println(c0, c1, c2)
 }
