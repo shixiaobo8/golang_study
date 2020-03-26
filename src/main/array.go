@@ -29,10 +29,10 @@ var (
 )
 
 // 获取打折金额
-func getRatePrice(WeekDay string, Price float64) float64 {
+func getRatePrice(WeekDay int, Price float64) float64 {
 	payment := 0.0
 	// var WeekDay int = 0
-	switch WeekDay := 0; WeekDay {
+	switch WeekDay {
 	case MONDAY:
 		payment = rates[0] * Price
 	case QUESDAY:
@@ -59,4 +59,6 @@ func TestArr() {
 
 func main() {
 	TestArr()
+	price := getRatePrice(QUESDAY, 208)
+	fmt.Print(price)
 }
