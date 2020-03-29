@@ -60,5 +60,24 @@ func TestArr() {
 func main() {
 	TestArr()
 	price := getRatePrice(QUESDAY, 208)
-	fmt.Print(price)
+	fmt.Println(price)
+	fmt.Println(PrintSeason())
+	fmt.Println(printYear())
+	for i := 1; i < len(year)/len(seasons)+1; i++ {
+		// t := seasonMap[seasonNames[i]]
+		s := len(year) / i
+		switch s {
+		case SPRING:
+			seasonMap[seasonNames[i]] = append(seasonMap[seasonNames[i]], s)
+		case SUMMER:
+			seasonMap[seasonNames[i]] = append(seasonMap[seasonNames[i]], s)
+		case FALL:
+			seasonMap[seasonNames[i]] = append(seasonMap[seasonNames[i]], s)
+		case WINTER:
+			seasonMap[seasonNames[i]] = append(seasonMap[seasonNames[i]], s)
+		default:
+			break
+		}
+	}
+	fmt.Println(seasonMap)
 }
