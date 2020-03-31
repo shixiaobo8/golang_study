@@ -63,18 +63,20 @@ func main() {
 	fmt.Println(price)
 	fmt.Println(PrintSeason())
 	fmt.Println(printYear())
-	for i := 1; i < len(year)/len(seasons)+1; i++ {
+	months := len(year)
+	//seasonsLength := len(seasons)
+	// forSeasonsLength := months/seasonsLength + 1
+	for i := 1; i < months+1; i++ {
 		// t := seasonMap[seasonNames[i]]
-		s := len(year) / i
-		switch s {
-		case SPRING:
-			seasonMap[seasonNames[i]] = append(seasonMap[seasonNames[i]], s)
-		case SUMMER:
-			seasonMap[seasonNames[i]] = append(seasonMap[seasonNames[i]], s)
-		case FALL:
-			seasonMap[seasonNames[i]] = append(seasonMap[seasonNames[i]], s)
-		case WINTER:
-			seasonMap[seasonNames[i]] = append(seasonMap[seasonNames[i]], s)
+		switch i {
+		case 3, 4, 5:
+			seasonMap[seasonNames[SPRING-1]] = append(seasonMap[seasonNames[SPRING-1]], i)
+		case 6, 7, 8:
+			seasonMap[seasonNames[SUMMER-1]] = append(seasonMap[seasonNames[SUMMER-1]], i)
+		case 9, 10, 11:
+			seasonMap[seasonNames[FALL-1]] = append(seasonMap[seasonNames[FALL-1]], i)
+		case 12, 1, 2:
+			seasonMap[seasonNames[WINTER-1]] = append(seasonMap[seasonNames[WINTER-1]], i)
 		default:
 			break
 		}
