@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="134b2600-0c4a-432a-8995-7cd81de000c0" name="Default Changelist" comment="" />
+    <list default="true" id="134b2600-0c4a-432a-8995-7cd81de000c0" name="Default Changelist" comment="map 和 结构体 type struct 学习">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/pointer.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/pointer.go" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,7 +18,10 @@
       </list>
     </option>
   </component>
-  <component name="GOROOT" path="D:/golang" />
+  <component name="GOROOT" path="E:/golang" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/src/main/getApolloConfig.go" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -26,14 +33,16 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultGoTemplateProperty" value="Go File" />
+    <property name="GO_FMT" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="configurable.Global.GOPATH.is.expanded" value="true" />
-    <property name="configurable.Module.GOPATH.is.expanded" value="false" />
-    <property name="configurable.Project.GOPATH.is.expanded" value="true" />
+    <property name="configurable.Module.GOPATH.is.expanded" value="true" />
+    <property name="configurable.Project.GOPATH.is.expanded" value="false" />
     <property name="go.import.settings.migrated" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$" />
-    <property name="settings.editor.selected.configurable" value="goland.project.structure" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="go.vgo" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -41,7 +50,7 @@
       <recent name="E:\golang_study\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Build.go build getApolloConfig.go">
+  <component name="RunManager" selected="Go Build.golang_github_study">
     <configuration name="go build Hello.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="golang_study" />
       <working_directory value="$PROJECT_DIR$/" />
@@ -51,17 +60,21 @@
       <output_directory value="$PROJECT_DIR$/bin/" />
       <method v="2" />
     </configuration>
-    <configuration name="go build getApolloConfig.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="golang_github_study" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true">
       <module name="golang_study" />
       <working_directory value="$PROJECT_DIR$/" />
-      <kind value="FILE" />
+      <kind value="DIRECTORY" />
       <filePath value="$PROJECT_DIR$/src/main/getApolloConfig.go" />
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Go Build.golang_github_study" />
+      <item itemvalue="Go Build.go build Hello.go" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Go Build.go build getApolloConfig.go" />
+        <item itemvalue="Go Build.golang_github_study" />
         <item itemvalue="Go Build.go build Hello.go" />
       </list>
     </recent_temporary>
@@ -69,23 +82,47 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="switch" />
+    <MESSAGE value="switch map" />
+    <MESSAGE value="map 和 结构体 type struct 学习" />
+    <option name="LAST_COMMIT_MESSAGE" value="map 和 结构体 type struct 学习" />
+  </component>
+  <component name="VgoProject">
+    <integration-enabled>true</integration-enabled>
+    <proxy>https://goproxy.cn</proxy>
+  </component>
   <component name="WindowStateProjectService">
     <state x="275" y="22" key="#Deployment" timestamp="1584546201463">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="275" y="22" key="#Deployment/0.0.1366.728@0.0.1366.728" timestamp="1584546201463" />
-    <state x="137" y="19" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1584546264574">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="361" y="71" key="#GOROOT" timestamp="1584943284711">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="71" key="#GOROOT/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1584943284711" />
+    <state x="154" y="22" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585558432226">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="137" y="19" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1584546264574" />
+    <state x="154" y="22" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1585558432226" />
     <state x="391" y="19" key="#go_build_String.go" timestamp="1584885034313">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="391" y="19" key="#go_build_String.go/0.0.1366.728@0.0.1366.728" timestamp="1584885034313" />
+    <state x="2385" y="8" key="CommitChangelistDialog2" timestamp="1585746084416">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="372" y="6" key="CommitChangelistDialog2/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1585657123486" />
+    <state x="2385" y="8" key="CommitChangelistDialog2/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1585746084416" />
     <state x="417" y="125" key="EnvironmentVariablesDialog" timestamp="1584546260959">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="417" y="125" key="EnvironmentVariablesDialog/0.0.1366.728@0.0.1366.728" timestamp="1584546260959" />
+    <state x="2659" y="261" key="FileChooserDialogImpl" timestamp="1585364927091">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2659" y="261" key="FileChooserDialogImpl/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1585364927091" />
     <state width="1286" height="163" key="GridCell.Tab.0.bottom" timestamp="1584720259423">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -118,9 +155,31 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1286" height="204" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1584546380346" />
-    <state x="184" y="6" key="SettingsEditor" timestamp="1584546097319">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="643" y="139" key="RollbackChangesDialog" timestamp="1585103316421">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="643" y="139" key="RollbackChangesDialog/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1585103316421" />
+    <state x="2179" y="9" key="SettingsEditor" timestamp="1585364739860">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="184" y="6" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1584546097319" />
+    <state x="2179" y="9" key="SettingsEditor/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1585364739860" />
+    <state x="2371" y="183" key="Vcs.Push.Dialog.v2" timestamp="1585746089661">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1585657127715" />
+    <state x="2371" y="183" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1585746089661" />
+    <state x="171" y="136" width="1200" height="584" key="com.intellij.history.integration.ui.views.SelectionHistoryDialog" timestamp="1585103242000">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="171" y="136" width="1200" height="584" key="com.intellij.history.integration.ui.views.SelectionHistoryDialog/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1585103242000" />
+    <state x="461" y="219" key="git4idea.merge.GitPullDialog" timestamp="1585558370841">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="461" y="219" key="git4idea.merge.GitPullDialog/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1585558370841" />
+    <state x="564" y="293" key="git4idea.rebase.GitRebaseDialog" timestamp="1585103288198">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="564" y="293" key="git4idea.rebase.GitRebaseDialog/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1585103288198" />
   </component>
 </project>
