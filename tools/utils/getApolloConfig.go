@@ -3,12 +3,13 @@
  */
 
 // 包名
-package main
+package utils
 
 // 导入包
-import s "fmt"
+import s  "fmt"
 
 import (
+	"fmt"
 	"io/ioutil"
 	"net/http"
 	"strings"
@@ -19,7 +20,7 @@ import (
 const APOLLO_CONFIG_SERVER_PORT = "8070"
 
 // 定义全局变量
-var apollo_config_server_base_url string = "http://192.168.85.203:" + APOLLO_CONFIG_SERVER_PORT
+var Apollo_config_server_base_url string = "http://192.168.85.203:" + APOLLO_CONFIG_SERVER_PORT
 
 // 一般类型声明
 // type newType aaa
@@ -42,7 +43,7 @@ func LoginCookie(){
 	// password := "fwadmin123"
 
 	// apollo登陆url
-	apollo_login_url := apollo_config_server_base_url + "/signin"
+	apollo_login_url := Apollo_config_server_base_url + "/signin"
 
 	// 构造post from data
 	login_data := `{"username":"apollo","password":"fwadmin123"}`
