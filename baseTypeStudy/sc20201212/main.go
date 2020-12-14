@@ -12,9 +12,10 @@ import (
     "strconv"
     "bufio"
     "strings"
-    //"unsafe"
+    "unsafe"
     "os"
     "math"
+    "time"
 )
 
 // 常量
@@ -52,6 +53,7 @@ var (
 
 //  package 文件中的init 编译执行的第一部分
 func init() {
+    fmt.Printf("当前时间戳:  %v\n",time.Now().Unix())
     fmt.Printf("今天是20201212,开始练习...\n")
     fmt.Printf(BaseTypeKeyWord+"\n")
 }
@@ -202,17 +204,57 @@ func TestIntUseAge() {
 }
 
 // 打印int整型的内存占用字节数以及数值范围
-func PrintIntMemRange(intbit int) (mem int,maxValueRange int64) {
-	mem = intbit/8
-        maxValueRange = int64((math.Pow(float64(2),float64((intbit-1))))-1)
-        return 
+func PrintIntMemRange(intbit uint8) (mem uint8,maxValueRange int64) {
+    mem = intbit/8
+    maxValueRange = int64((math.Pow(float64(2),float64((intbit-1))))-1)
+    return 
 }
 
 // 或者命令行参数
 
+// 打印float 浮点型占用内存字节数   取值范围比较复杂这里就不计算了
+func CalFloatMem(floatbit uint8) (mem uint8) {
+    mem = uint8(unsafe.Sizeof(floatbit))
+    return mem
+} 
+
+// 打印float 使用方法
+func TestFloatUseAge() {
+    FloatInfo := `golang float 的使用:
+      1. float32: 
+      2. float64: 
+    `
+    var isFlag bool = true
+    var floatBit uint8
+    fmt.Println(FloatInfo)
+    for isFlag == true   {
+        fmt.Printf("请输入一个float位: ")
+        fmt.Scanf("%d",&floatBit)
+        // floatBit := fmt.Sprintf("%d",floatBit)
+        switch {
+	    case floatBit == 32:
+                fmt.Printf("%T,%v\n",floatBit,floatBit)
+                floatBitMem := CalFloatMem(floatBit)
+                fmt.Printf("您输入的float位是%T,%v,占用内存字节数为%d Byte\n",floatBit,floatBit,floatBitMem)
+                isFlag = false
+            case floatBit == 64:
+                fmt.Printf("%T,%v\n",floatBit,floatBit)
+                floatBitMem := CalFloatMem(floatBit)
+                fmt.Printf("您输入的float位是%T,%v,占用内存字节数为%d Byte\n",floatBit,floatBit,floatBitMem)
+                isFlag = false
+	    default:
+	        fmt.Printf("输入的位数不符合条件,请重新输入...\n")
+        }
+    }
+    fmt.Printf("%T,%v",floatBit,floatBit)
+    floatBitMem := CalFloatMem(floatBit)
+    fmt.Printf("您输入的float位是%T,%v,占用内存字节数为%d Byte",floatBit,floatBit,floatBitMem)
+}
+
 func main() {
-   TestBoolUseAge()
-   // TestIntUseAge()
-   // switch case 版本
-   TestIntUseAgeBySwitch()
+    TestBoolUseAge()
+    // TestIntUseAge()
+    // switch case 版本
+    // TestIntUseAgeBySwitch()
+    TestFloatUseAge()
 }
