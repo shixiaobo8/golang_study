@@ -214,7 +214,11 @@ func PrintIntMemRange(intbit uint8) (mem uint8,maxValueRange int64) {
 
 // 打印float 浮点型占用内存字节数   取值范围比较复杂这里就不计算了
 func CalFloatMem(floatbit uint8) (mem uint8) {
-    mem = uint8(unsafe.Sizeof(floatbit))
+    if floatbit == 32 {
+        mem = uint8(unsafe.Sizeof(float32(floatbit)))
+    } else if floatbit == 64 {
+        mem = uint8(unsafe.Sizeof(float64(floatbit)))
+    }
     return mem
 } 
 
