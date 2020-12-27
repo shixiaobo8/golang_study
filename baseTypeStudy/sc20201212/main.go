@@ -228,6 +228,16 @@ func TestFloatUseAge() {
       1. float32: 
       2. float64: 
     `
+    float1 := 0.333
+    fmt.Printf("默认定义一个带小数点数字他的类型是: %T,%v\n",float1,float1)
+    float2 := .22323
+    fmt.Printf("float小数点的昨天可以省略%T, float2=%v\n",float2,float2)
+    float3 := .232e10
+    float4 := .829E3
+    float5 := 29E-3
+    float6 := 21e-13
+    fmt.Printf("使用科学计算法表示浮点数:float3=%f,float4=%f,float5=%f,float6=%f\n",float3,float4,float5,float6)
+    
     var isFlag bool = true
     var floatBit uint8
     fmt.Println(FloatInfo)

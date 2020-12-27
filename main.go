@@ -2,6 +2,8 @@ package main
 
 import (
     "fmt"
+    "log"
+    "github.com/gobuffalo/packr"
     )
 
 const (
@@ -13,6 +15,13 @@ const (
 var fristWord string 
 
 func main(){
+    box := packr.NewBox("./templates")
+
+  s, err := box.FindString("admin/index.html")
+  if err != nil {
+    log.Fatal(err)
+  }
+  fmt.Println(s)
     // 打印未初始化全局变量
     fmt.Println(fristWord)
     // 打印 全局初始化后变量值
