@@ -55,6 +55,8 @@ func WriteFileByBufio(srcFile,destFile string,strs []string){
         fmt.Printf("源文件文件打开或创建失败:%v",err)
         os.Exit(1)
     }
+    // 打开写入文件
+    destfile,err := os.OpenFile(destFile,O_RDWR|O_CREATE|O_APPEND,0755)
     // 预装buf
     var rbc,rbc1 int
     var buf_err error
